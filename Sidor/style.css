@@ -1,18 +1,17 @@
-body{
+.wrapper{
     display: grid;
-    margin: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 50px auto 50px;
-    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto auto 30px;
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer"
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
 header{
     grid-area: header;
+    margin: auto;
     text-align: center;
 }
 
@@ -23,40 +22,65 @@ header a{
 
 nav{
     grid-area: nav;
-    min-height: 6vh;
-}
-
-nav li{
-    list-style-type: none;
-    text-align: center;
-    font-size: 1.5em;
-    border-style: solid;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 nav>ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+nav li{
+    height: 40%;
+    list-style-type: none;
+    border: solid;
+    margin: 20px auto;
 }
 
 nav a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
     text-decoration: none;
-    color: black;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 3vh;
 }
 
 main{
     grid-area: main;
-    min-height: 70vh;
-    min-width: 100vw;
-    margin-top: 1vh;
+    display: grid;
+    grid-template-rows: auto;
     border-style: solid;
+    height: 100px;
+}
+
+main section p{
+    margin: 1%;
 }
 
 footer{
     grid-area: footer;
     font-size: 2em;
-    min-height: 20vh;
+    border-style: solid;
+}
+
+@media screen and (min-width:800px){
+    body{
+        height: 95vh;
+    }
+    
+    .wrapper{
+        grid-template-rows: 50px 50px auto 30px;
+        width: 90%;
+        height: 95%;
+        margin: 0 auto;
+    }
+
+    nav>ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 
