@@ -11,7 +11,7 @@ body{
 
 header{
     grid-area: header;
-    text-align: center;
+    margin: auto;
 }
 
 header a{
@@ -25,25 +25,45 @@ nav{
 
 nav>ul{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 nav li{
+    height: 40%;
     list-style-type: none;
     border: solid;
-    text-align: center;
-    margin: 15%;
+    margin: 20px auto;
 }
 
 nav a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
     text-decoration: none;
+    text-align: center;
+    margin-top: 2%;
     font-size: 1.5em;
 }
 
 main{
     grid-area: main;
-    display:  grid;
+    display: grid;
     grid-template-rows: auto;
+    margin-top: 1%;
+}
+
+main section p{
+    margin: 3%
+}
+
+iframe{
+    margin: 5%;
+    width: 550px;
+    height: 300px;
+    border: none;
 }
 
 footer{
@@ -51,12 +71,29 @@ footer{
     font-size: 2em;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width: 800px){
     body{
+        grid-template-rows: 50px 50px auto 30px;
+        min-height: 95vh;
+        margin: 0 auto;
         height: 95%;
+        width: 90%;
     }
     nav>ul{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    main{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    iframe{
+        width: 90%;
+        height: 60%;
+    }
+
+    .sideBar{
+        border: solid;
     }
 }
 
