@@ -61,14 +61,18 @@ main section p{
 
 iframe{
     margin: 5%;
-    width: 550px;
-    height: 300px;
+    width: 70%;
+    height: 70%;
     border: none;
 }
 
 footer{
     grid-area: footer;
     font-size: 2em;
+}
+
+@media screen and (min-width: 1000px) {
+    
 }
 
 @media screen and (min-width: 800px){
@@ -88,8 +92,12 @@ footer{
     }
 
     iframe{
-        width: 90%;
-        height: 60%;
+        width: 700px;
+        height: 400px;
+    }
+
+    .middle{
+        overflow: auto; /*Måste fortsätta med detta, har inte fått det att fungera än*/
     }
 
     .sideBar{
