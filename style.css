@@ -11,7 +11,7 @@ body{
 
 header{
     grid-area: header;
-    margin: auto;
+    margin: 0 auto;
 }
 
 header a{
@@ -27,7 +27,7 @@ nav>ul{
     display: grid;
     grid-template-rows: auto;
     padding: 0;
-    margin: 0;
+    margin: auto;
     height: 100%;
 }
 
@@ -52,7 +52,6 @@ main{
     grid-area: main;
     display: grid;
     grid-template-rows: auto;
-    margin-top: 1%;
 }
 
 main section p{
@@ -77,11 +76,10 @@ footer{
 
 @media screen and (min-width: 800px){
     body{
-        grid-template-rows: 50px 50px auto 30px;
-        min-height: 95vh;
-        margin: 0 auto;
-        height: 95%;
+        grid-template-rows: 80px 100px auto 80px;
+        margin: auto;
         width: 90%;
+        height:95vh;
     }
     nav>ul{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -89,6 +87,7 @@ footer{
 
     main{
         grid-template-columns: 1fr 3fr 1fr;
+        height:680px;
     }
 
     iframe{
@@ -96,8 +95,8 @@ footer{
         height: 400px;
     }
 
-    .middle{
-        overflow: auto; /*Måste fortsätta med detta, har inte fått det att fungera än*/
+    section{
+        overflow: auto;
     }
 
     .sideBar{
