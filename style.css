@@ -25,7 +25,6 @@ nav{
 
 nav>ul{
     display: grid;
-    grid-template-rows: auto;
     padding: 0;
     margin: auto;
     height: 100%;
