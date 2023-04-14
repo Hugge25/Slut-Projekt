@@ -1,7 +1,9 @@
 body{
     display: grid;
+    width: 100vw;
+    margin: 0; 
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto auto 30px;
+    grid-template-rows: 80px auto auto 30px;
     grid-template-areas: 
     "header"
     "nav"
@@ -28,21 +30,19 @@ nav>ul{
     display: grid;
     padding: 0;
     margin: auto;
-    height: 100%;
 }
 
 nav li{
     height: 40%;
     list-style-type: none;
-    border: solid rgba(255, 255, 255, 0);
-    border-radius: 20px;
     margin: 15px auto;
-    background-color: white;
 }
 
 nav a{
-    height: 100%;
     width: 100%;
+    border-radius: 20px;
+    border: solid rgba(255, 255, 255, 0);
+    background-color: white;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -71,6 +71,7 @@ iframe{
 footer{
     grid-area: footer;
     background-color: #ccfcd6;
+    height: 15vh;
 }
 
 @media screen and (min-width: 1000px) {
@@ -89,7 +90,11 @@ footer{
     }
 
     nav a{
-        height: 115px;
+        height: 6vh;
+    }
+
+    nav a:hover{
+        background-color: #f2f6fc;
     }
 
     nav li{
