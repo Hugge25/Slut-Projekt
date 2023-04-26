@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-        <a href="index.html" title="Startsida"><h1>Musik</h1></a>
+      <a href="index.html" title="Startsida"><h1>Musik<img src="musik.png"></h1></a>
     </header>
     <nav>
         <ul>
@@ -22,38 +22,42 @@
     </nav>
     <main>
       <section class="sideBar">
-        <p>Välkommen</p>
-        <p>
-          Nunc ornare nunc ac lacus faucibus laoreet. Donec ultricies egestas erat ut pharetra. Praesent rutrum quam elit, rutrum cursus 
-          neque maximus nec. Mauris ultricies sollicitudin magna eget posuere. Aliquam pharetra, augue et posuere egestas, lectus leo 
-          tempus purus, placerat finibus tellus massa nec est. Integer lobortis ipsum quis lectus placerat elementum. Ut venenatis metus 
-          at venenatis rhoncus. Praesent eget semper augue, ut dictum ipsum. Duis eget eros a mi faucibus semper. Aliquam pretium lectus 
-          metus, vel aliquet ante semper vel. In sodales justo in faucibus pulvinar. Vestibulum in lorem a tellus lobortis consectetur. 
-          Integer faucibus tortor odio, non lacinia nulla rhoncus id. Sed pellentesque, mauris vitae placerat pulvinar, velit eros blandit 
-          purus, sed venenatis odio libero at tortor. Cras vestibulum turpis orci, nec sodales ante porta id. Morbi sit amet turpis vitae 
-          urna tincidunt luctus. Ut nec posuere dui, et cursus magna. Integer ac efficitur justo, eget lacinia lectus. Nam in ex vehicula, 
-          condimentum risus ac, auctor odio. Fusce scelerisque eleifend viverra. Maecenas egestas dolor lorem, sit amet volutpat felis 
-          sollicitudin eu. Mauris sit amet consequat metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et tellus sit 
-          amet nunc venenatis tincidunt nec in nisi. Fusce iaculis a ex eu facilisis. Phasellus a dapibus mi. Vestibulum mi eros, lacinia 
-          non lorem non, pretium consequat nunc. Suspendisse accumsan nunc id tincidunt tristique. Pellentesque condimentum tincidunt ante, 
-          id mattis nisl porta in. Suspendisse a justo facilisis, consequat arcu gravida, tristique enim. Ut tristique 
-          purus ac urna viverra malesuada.
-        </p>
+        <h2>Startsida</h2>
       </section>
       <section>
-        <h2>Startsida</h2>
+        <h2>Välkommen</h2>
+        <h3>Ankät</h3>
+        <p>Fyll i denna ankät är du snäll, det hjälper vår hemsida</p>
+        <from action="form.html" method="post">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mi ipsum, commodo nec sodales nec, sodales nec enim. Phasellus 
-          varius erat vel nisl pretium, sed ornare enim suscipit. Duis eros diam, tincidunt at dignissim et, iaculis quis dui. Quisque
-          et sodales ex, sed dapibus eros. Praesent sit amet elit ligula. Integer et leo mauris. Nulla vitae viverra erat. Proin quis 
-          risus et elit ornare faucibus. Ut in consequat magna. Sed consequat, leo sit amet facilisis auctor, sapien justo sagittis 
-          orci, id molestie ipsum lacus sed tortor. Nulla hendrerit odio id accumsan dictum. Maecenas lorem diam, lobortis et nunc sit 
-          amet, elementum malesuada magna. Aenean pulvinar feugiat orci, at elementum nibh laoreet nec. Sed fringilla pretium 
-          convallis. Vestibulum id turpis ut lorem faucibus fermentum.
+            <label for="un">Användarnamn:</label>
+            <input name="username" id="un" required>
         </p>
-      </section>
-      <section class="sideBar">
-        <p>Hej hej</p>
+        <p>
+            <label for="pw">Lösenord:</label>
+            <input name="password" type="password" id="pw" required>
+        </p>
+        <p>
+            <input type="submit" value="Logga in">
+        </p>
+      </from>
+      <form action="form.html" metod="post">
+        <p>
+            <input type="radio" id="kön1" name="kön" value="Man">
+            <label for="kön1">Man</label><br>
+            <input type="radio" id="kön2" name="kön" value="Kvinna">
+            <label for="kön2">Kvinna</label><br>
+            <input type="submit" value="Klar">
+            <br><br>
+        </p>
+      </form>
+      <h3>Feedback</h3>
+      <form action="form.html" method="get">
+        <p>
+          <textarea id="fb" name="feedback" rows="6" cols="80"></textarea><br>
+          <input type="submit" value="Klar" required>
+        </p>
+      </form>
       </section>
     </main>
     <footer>
