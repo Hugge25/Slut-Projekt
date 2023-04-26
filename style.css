@@ -21,6 +21,14 @@ header a{
     color: black;
 }
 
+h2{
+    margin-left: 4vh;
+}
+
+h3{
+    margin-left: 4vh;
+}
+
 nav{
     grid-area: nav;
     background-color: #c7f2ed;
@@ -59,6 +67,15 @@ main{
 
 main section p{
     margin: 3%
+}
+
+table{
+    border: solid;
+    margin-left: 6vh;
+}
+
+td{
+    border: solid;
 }
 
 iframe{
