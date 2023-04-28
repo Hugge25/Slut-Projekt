@@ -7,17 +7,31 @@
   </head>
   <body>
     <header>
-      <a href="index.html" title="Startsida"><h1>Musik<img src="musik.png"></h1></a>
+      <a href="index.html" title="Startsida"><h1>Musik<img src="musik.png" alt="en musik ton"></h1></a>
     </header>
     <nav>
         <ul>
-            <li><a href="fiol.html">Fiol</a></li>
-            <li><a href="gitarr.html">Gitarr</a></li>
-            <li><a href="trumpet.html">Trumpet</a></li>
-            <li><a href="trummor.html">Trummor</a></li>
-            <li><a href="piano.html">Piano</a></li>
-            <li><a href="flojt.html">Flöjt</a></li>
-            <li><a href="musikHi.html">Musikens Historia</a></li>
+            <li>
+                <a href="fiol.html">Fiol</a>
+            </li>
+            <li>
+                <a href="gitarr.html">Gitarr</a>
+            </li>
+            <li>
+                <a href="trumpet.html">Trumpet</a>
+            </li>
+            <li>
+                <a href="trummor.html">Trummor</a>
+            </li>
+            <li>
+                <a href="piano.html">Piano</a>
+            </li>
+            <li>
+                <a href="flojt.html">Flöjt</a>
+            </li>
+            <li>
+                <a href="musikHi.html">Musikens Historia</a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -28,20 +42,20 @@
         <h2>Välkommen</h2>
         <h3>Enkät</h3>
         <p>Fyll i denna ankät är du snäll, det hjälper vår hemsida</p>
-        <from action="form.html" method="post">
-        <p>
+        <form action="form.html" method="post">
+          <p>
             <label for="un">Användarnamn:</label>
             <input name="username" id="un" required>
-        </p>
-        <p>
+          </p>
+          <p>
             <label for="pw">Lösenord:</label>
             <input name="password" type="password" id="pw" required>
-        </p>
-        <p>
+          </p>
+          <p>
             <input type="submit" value="Logga in">
-        </p>
-      </from>
-      <form action="form.html" metod="post">
+          </p>
+      </form>
+      <form action="form.html" method="post">
         <p>
             <input type="radio" id="kön1" name="kön" value="Man">
             <label for="kön1">Man</label><br>
@@ -55,16 +69,16 @@
       <form action="form.html" method="get">
         <p>
           <textarea id="fb" name="feedback" rows="6" cols="80"></textarea><br>
-          <input type="submit" value="Klar" required>
+          <input type="submit" value="Klar">
         </p>
       </form>
       </section>
     </main>
     <footer>
-        <section>
-            <p>Om oss</p>
-            <p>Hej, jag heter Hugo och jag har gjort den här hemsidan</p>
-        </section>
+      <section>
+          <p>Om oss</p>
+          <p>Hej, jag heter Hugo och jag har gjort den här hemsidan</p>
+      </section>
     </footer>
   </body>
 </html>

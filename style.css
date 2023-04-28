@@ -130,19 +130,24 @@ footer{
     main{
         padding-top: 10px;
         padding-bottom: 10px;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 4fr;
         height:660px;
         width: 98%;
         margin: 0 auto;
     }
 
     iframe{
-        width: 700px;
-        height: 400px;
+        width: 896px;
+        height: 504px;
+        margin-left: 20vh;
     }
 
     section{
         overflow: auto;
+    }
+
+    section :nth-child(2){
+        margin-right: 10vh;
     }
 
     .sideBar{
