@@ -1,4 +1,4 @@
-body{
+body{ /*All kod fram till rad 102 gäller alltid, oavsett skräm storlek*/
     display: grid;
     width: 100vw;
     margin: 0; 
@@ -19,14 +19,17 @@ header{
 header a{
     text-decoration: none;
     color: black;
+    font-family: supermario;
 }
 
 h2{
     margin-left: 4vh;
+    font-family: super-bubble;
 }
 
 h3{
     margin-left: 4vh;
+    font-family: super-bubble;
 }
 
 img{
@@ -54,13 +57,14 @@ nav li{
 nav a{
     width: 100%;
     border-radius: 20px;
-    border: solid rgba(255, 255, 255, 0);
+    border: solid rgba(0, 0, 0, 0); /*Här använder jag mig av rgba, jag sätter alpha till 0 så får en mer "clean" border på mina nav a, om jag sätter andra värden på r, g eller b så ändrar det inget så länge a=0*/
     background-color: white;
     display: inline-block;
     text-decoration: none;
     text-align: center;
     margin-top: 2%;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    font-family: super-bubble;
     color: black;
 }
 
@@ -72,6 +76,10 @@ main{
 
 main section p{
     margin: 3%
+}
+
+p{
+    font-family: typewriter;
 }
 
 main a{
@@ -100,11 +108,26 @@ footer{
     height: 15vh;
 }
 
-@media screen and (min-width: 1000px) {
-    
+@font-face {
+    font-family: 'supermario';
+    src: url('supermario256-webfont.woff') format('woff'),
+         url('supermario256-webfont.woff2') format('woff2');
 }
 
-@media screen and (min-width: 800px){
+@font-face{
+    font-family: 'super-bubble';
+    src: url('super_bubble-webfont.woff') format('woff'),
+         url('super_bubble-webfont.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'typewriter';
+    src: url('jmh_typewriter-webfont.woff') format('woff'),
+         url('jmh_typerwriter-webfont.woff2') format('woff2');
+}
+
+
+@media screen and (min-width: 800px){ /*Här gör en media screen som gäller för alla skärmar som är bredare än 800px, alltså gäller denna kod för typ iPads och Datorer.*/
     body{
         grid-template-rows: 80px 100px auto 80px;
         margin: auto;
@@ -150,7 +173,7 @@ footer{
         margin-right: 10vh;
     }
 
-    .sideBar{
+    main section:first-child{
         border: solid;
         border-radius: 20px;
     }
