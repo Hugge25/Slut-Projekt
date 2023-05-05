@@ -1,4 +1,4 @@
-body{ /*All kod fram till rad 102 gäller alltid, oavsett skräm storlek*/
+body{ /*All kod fram till rad 112 gäller alltid, oavsett skräm storlek*/
     display: grid;
     width: 100vw;
     margin: 0;
@@ -31,7 +31,7 @@ h3{
 }
 
 img{
-    width: 25px;
+    width: 30px;
     margin-left: 8px;
 }
 
@@ -104,12 +104,11 @@ footer{
     height: 15vh;
 }
 
-@font-face{
+@font-face{ /*Här skapar jag en font och kallar den typewriter, vilket jag tyckte va ganska passande.*/
     font-family: 'typewriter';
     src: url('jmh_typewriter-webfont.woff') format('woff'),
          url('jmh_typerwriter-webfont.woff2') format('woff2');
 }
-
 
 @media screen and (min-width: 800px){ /*Här gör en media screen som gäller för alla skärmar som är bredare än 800px, alltså gäller denna kod för typ iPads och Datorer.*/
     body{
@@ -150,7 +149,7 @@ footer{
     }
 
     section{
-        overflow: auto;
+        overflow: auto; /*Detta använder jag så att min footer är alltid längst ner på skärmen*/
     }
 
     section :nth-child(2){
