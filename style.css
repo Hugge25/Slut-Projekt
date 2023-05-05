@@ -1,7 +1,8 @@
 body{ /*All kod fram till rad 102 gäller alltid, oavsett skräm storlek*/
     display: grid;
     width: 100vw;
-    margin: 0; 
+    margin: 0;
+    font-family: typewriter;
     grid-template-columns: 1fr;
     grid-template-rows: 80px auto auto 30px;
     grid-template-areas: 
@@ -19,17 +20,14 @@ header{
 header a{
     text-decoration: none;
     color: black;
-    font-family: supermario;
 }
 
 h2{
     margin-left: 4vh;
-    font-family: super-bubble;
 }
 
 h3{
     margin-left: 4vh;
-    font-family: super-bubble;
 }
 
 img{
@@ -64,7 +62,6 @@ nav a{
     text-align: center;
     margin-top: 2%;
     font-size: 1.25em;
-    font-family: super-bubble;
     color: black;
 }
 
@@ -76,10 +73,6 @@ main{
 
 main section p{
     margin: 3%
-}
-
-p{
-    font-family: typewriter;
 }
 
 main a{
@@ -106,18 +99,6 @@ footer{
     grid-area: footer;
     background-color: #ccfcd6;
     height: 15vh;
-}
-
-@font-face {
-    font-family: 'supermario';
-    src: url('supermario256-webfont.woff') format('woff'),
-         url('supermario256-webfont.woff2') format('woff2');
-}
-
-@font-face{
-    font-family: 'super-bubble';
-    src: url('super_bubble-webfont.woff') format('woff'),
-         url('super_bubble-webfont.woff2') format('woff2');
 }
 
 @font-face{
