@@ -48,14 +48,13 @@ nav>ul{
 
 nav li{
     height: 40%;
-    list-style-type: none;
     margin: 15px auto;
 }
 
 nav a{
     width: 100%;
     border-radius: 20px;
-    border: solid rgba(0, 0, 0, 0); /*Här använder jag mig av rgba, jag sätter alpha till 0 så får en mer "clean" border på mina nav a, om jag sätter andra värden på r, g eller b så ändrar det inget så länge a=0*/
+    border: solid rgba(0, 0, 0, 0); /*Här använder jag mig av rgba, jag sätter alpha till 0 så får en mer "clean" border på mina nav a, om jag sätter andra värden på r, g eller b så ändrar det inget så länge a=0. Om du som läser detta inte förstår, testa att sätta a = 255.*/
     background-color: white;
     display: inline-block;
     text-decoration: none;
@@ -63,6 +62,10 @@ nav a{
     margin-top: 2%;
     font-size: 1.25em;
     color: black;
+}
+
+li{
+    list-style-type: none;
 }
 
 main{
