@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Musik</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Startsida</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -35,46 +36,38 @@
         </ul>
     </nav>
     <main>
-      <section>
-        <h2>Startsida</h2> 
-      </section>
-      <section>
-        <h2>Välkommen</h2>
-        <h3>Enkät</h3>
-        <p>Fyll i denna ankät är du snäll, det hjälper vår hemsida</p>
-        <form action="form.html" method="post"> <!--form.html är en sida man kommer till efter att man tryckt submit-->
-          <p>
-            <label for="un">Användarnamn:</label>
-            <input name="username" id="un" required>
-          </p>
-          <p>
-            <label for="pw">Lösenord:</label>
-            <input name="password" type="password" id="pw" required>  <!--Med detta kan man "logga in" men egentligen så sparas inte uppgfiterna av hemsidans avnändare, vi har inte lärt oss detta ännu.-->
-          </p>
-          <p>
-            <input type="submit" value="Logga in">
-          </p>
-      </form>
+      <div>
+        <h2>Välkommen</h2><br>
+        <h3>Enkät</h3><br>
+        <p>Fyll i denna ankät är du snäll, det hjälper vår hemsida</p><br>
       <form action="form.html" method="post"> 
+        <p>
+          <label for="un">Användarnamn:</label>
+          <input name="username" id="un" required>
+        </p>
+        <p>
+          <label for="pw">Lösenord:</label>
+          <input name="password" type="password" id="pw" required>  <!--Med detta kan man "logga in" men egentligen så sparas inte uppgfiterna av hemsidans avnändare, vi har inte lärt oss detta ännu.-->
+        </p>
+        <p>
+          <input type="submit" value="Logga in">
+        </p>
         <p>
             <input type="radio" id="kön1" name="kön" value="Man">
             <label for="kön1">Man</label><br>
             <input type="radio" id="kön2" name="kön" value="Kvinna">
             <label for="kön2">Kvinna</label><br>
             <input type="radio" id="kön3" name="kön" value="Inget">
-            <label for="kön3">Icke binär</lable><br>
-            <input type="submit" value="Klar"> <!--När du trycker på submit kommer du till form.html-->
+            <label for="kön3">Icke binär</label><br>
+            <input type="submit" value=Klar> <!--När du trycker på submit kommer du till form.html-->
+            <h3>Feedback</h3>
+            <p>                                   
+              <textarea id="fb" name="feedback" rows="6" cols="50"></textarea><br> <!--Här gör jag en textarea för att ta emot feedback. Jag ville ha lite mer än 50 på cols, men om jag har 60 eller mer så kommer hela sidan att bli bredare i mobil läge. Så 50 är det högsta jag kan använda.-->
+              <input type="submit" value="Klar"> 
             <br><br>
         </p>
       </form>
-      <h3>Feedback</h3>
-      <form action="form.html" method="get">
-        <p>
-          <textarea id="fb" name="feedback" rows="6" cols="50"></textarea><br> <!--Här gör jag en textarea för att ta emot feedback.-->
-          <input type="submit" value="Klar">                                   <!--Jag ville ha lite mer än 50 på cols, men om jag har 60 eller mer så kommer--> 
-        </p>                                                                   <!--hela sidan att bli bredare i mobil läge. Så 50 är det högsta jag kan använda.-->     
-      </form>
-      </section>
+      </div>
     </main>
     <footer>
       <section>

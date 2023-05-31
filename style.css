@@ -22,11 +22,7 @@ header a{
     color: black;
 }
 
-h2{
-    margin-left: 4vh;
-}
-
-h3{
+h2, h3{
     margin-left: 4vh;
 }
 
@@ -103,6 +99,22 @@ footer{
     height: 15vh;
 }
 
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:focus{
+    color: green;
+}
+
+a:active{
+    color: red;
+}
+
 @font-face{ /*Här skapar jag en font och kallar den typewriter, vilket jag tyckte va ganska passande.*/
     font-family: 'typewriter';
     src: url('jmh_typewriter-webfont.woff') format('woff'),
@@ -158,6 +170,20 @@ footer{
     main section:first-child{
         border: solid;
         border-radius: 20px;
+    }
+
+    #MusikHistoria main{
+        grid-template-columns: 1fr;
+    }
+
+    #MusikHistoria section:first-child{
+        border: none;
+    }
+
+    div{
+        text-align:center;
+        overflow: auto;
+        width: 200vh;
     }
 
     footer{
