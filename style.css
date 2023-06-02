@@ -4,7 +4,7 @@ body{ /*All kod fram till rad 112 gäller alltid, oavsett skräm storlek*/
     margin: 0;
     font-family: typewriter;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px auto auto 30px;
+    grid-template-rows: 80px auto auto auto;
     grid-template-areas: 
     "header"
     "nav"
@@ -81,22 +81,21 @@ main a{
 table{
     border: solid;
     margin-left: 6vh;
+    border-collapse: collapse;
+}
+
+video{
+    margin-left: 20px;
+    width: 300px;
 }
 
 td{
     border: solid;
 }
 
-iframe{
-    margin: 5%;
-    width: 70%;
-    border: none;
-}
-
 footer{
     grid-area: footer;
     background-color: #ccfcd6;
-    height: 15vh;
 }
 
 a:link{
@@ -123,7 +122,7 @@ a:active{
 
 @media screen and (min-width: 800px){ /*Här gör en media screen som gäller för alla skärmar som är bredare än 800px, alltså gäller denna kod för typ iPads och Datorer.*/
     body{
-        grid-template-rows: 80px 100px auto 80px;
+        grid-template-rows: 80px 100px auto 11vh;
         margin: auto;
         height:95vh;
     }
@@ -153,10 +152,10 @@ a:active{
         margin: 0 auto;
     }
 
-    iframe{
+    video{
+        margin-left: 200px;
         width: 896px;
         height: 504px;
-        margin-left: 20vh;
     }
 
     section{
@@ -183,11 +182,7 @@ a:active{
     div{
         text-align:center;
         overflow: auto;
-        width: 200vh;
-    }
-
-    footer{
-        height: 109px;
+        width: 99vw;
     }
 
     footer p{
